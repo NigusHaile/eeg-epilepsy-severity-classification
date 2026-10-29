@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EEG Severity Lab — Epilepsy Severity Classification</title>
+    <meta
+      name="description"
+      content="Interactive EEG signal lab and machine-learning study classifying epilepsy severity (level 3 vs 4) from raw EEG recordings. 0.88 test accuracy, 0.92 ROC-AUC."
+    />
+    <meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#1a1f2b" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EEG Severity Lab — Epilepsy Severity Classification" />
+    <meta
+      property="og:description"
+      content="Explore EEG recordings in the browser and compare classifiers for epilepsy severity grading."
+    />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Apply the saved or system theme before first paint to avoid a flash. -->
+    <script>
+      try {
+        const saved = localStorage.getItem("theme");
+        const dark = saved
+          ? saved === "dark"
+          : window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.classList.toggle("dark", dark);
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>This site needs JavaScript to run the interactive EEG lab.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
