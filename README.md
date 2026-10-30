@@ -3,7 +3,7 @@
 Classifying **epilepsy severity level 3 vs level 4** from raw EEG recordings, and an interactive
 web app for exploring the signals in the browser.
 
-**Live demo:** _add your Vercel URL here_
+**Live demo:**(https://eeg-epilepsy-severity-classification.vercel.app/)
 
 | Test accuracy | ROC-AUC  | Recordings | Samples / recording |
 | :-----------: | :------: | :--------: | :-----------------: |
