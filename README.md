@@ -1,4 +1,4 @@
-# EEG Severity Lab — Epilepsy Severity Classification
+# Epilepsy Severity Classification
 
 Classifying **epilepsy severity level 3 vs level 4** from raw EEG recordings, and an interactive
 web app for exploring the signals in the browser.
